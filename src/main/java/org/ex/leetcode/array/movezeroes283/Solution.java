@@ -32,7 +32,7 @@ public class Solution {
         int n = nums.length;
         int j = 0;
         for (int i = 0; i < n; i++){
-            //当前元素!=0，就把其交换到左边，等于0的交换到右边
+            //当前元素!=0，就把其交换到左边，等于0的交换到右边 (冒泡排序）
             //nums[i]中存储不等于0的值（左侧），nums[j]中存储等于0的（右侧）
             if (nums[i] != 0) {
                 int tmp = nums[i];

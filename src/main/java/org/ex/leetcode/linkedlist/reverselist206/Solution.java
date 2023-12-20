@@ -1,4 +1,4 @@
-package org.ex.leetcode.reverselist206;
+package org.ex.leetcode.linkedlist.reverselist206;
 
 /**
  * @desc: 206 ReverseList 反转链表

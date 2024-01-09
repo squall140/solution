@@ -25,8 +25,8 @@ import java.util.Set;
  *
  * 思路二 哈希表
  *
- * 对于数组中每个元素，我们将它插入到哈希表中。
- * 如果插入一个元素时发现该元素已经存在于哈希表中，则说明存在重复的元素。
+ * 对于数组中每个元素，我们将它插入到哈希集合中。（思考219题——哈希集合和哈希表两者的相似之处和区别）
+ * 如果插入一个元素时发现该元素已经存在于哈希集合中，则说明存在重复的元素。
  *
  * 作者：力扣官方题解
  * 链接：https://leetcode.cn/problems/contains-duplicate/solutions/518991/cun-zai-zhong-fu-yuan-su-by-leetcode-sol-iedd/

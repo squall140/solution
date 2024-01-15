@@ -1,4 +1,4 @@
-package org.ex.leetcode.lru246;
+package org.ex.leetcode.linkedlist.lrucache146;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -21,9 +21,9 @@ import java.util.Map;
  * @author: Leif
  * @date: 2023/8/11 21:35
  */
-class LRUCache<K,V> extends LinkedHashMap<K,V> {
+class Solution02<K,V> extends LinkedHashMap<K,V> {
     private int capacity;
-    public LRUCache(int capacity) {
+    public Solution02(int capacity) {
         // 当accessOrder=true,get了的数据被放到了双向链表尾部，也就是按照了访问时间进行排序,这就是访问顺序的含义.
         super(capacity,0.75F, true);
         this.capacity = capacity;
@@ -51,7 +51,7 @@ class LRUCache<K,V> extends LinkedHashMap<K,V> {
      * @param args
      */
     public static void main(String[] args) {
-        LRUCache<String, Integer> cache = new LRUCache<>(3);
+        Solution02<String, Integer> cache = new Solution02<>(3);
         cache.put("k1",1);
         cache.put("k2",2);
         cache.put("k3",3);
@@ -69,7 +69,7 @@ class LRUCache<K,V> extends LinkedHashMap<K,V> {
         print(cache);   // 2, 1, 4
     }
 
-    public static void print(LRUCache<String, Integer> cache) {
+    public static void print(Solution02<String, Integer> cache) {
         cache.forEach((k, v) -> System.out.println(k + " : " + v));
     }
 

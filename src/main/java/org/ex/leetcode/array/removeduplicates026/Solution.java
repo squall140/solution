@@ -22,7 +22,8 @@ package org.ex.leetcode.array.removeduplicates026;
  * 时间复杂度：O(n)O(n)O(n)。
  * 空间复杂度：O(1)O(1)O(1)。
  *
- *
+ * 看这个题解
+ * https://leetcode.cn/problems/remove-duplicates-from-sorted-array/solutions/683841/shuang-zhi-zhen-shan-chu-you-xu-shu-zu-z-3pi4/
  *
  * @author: Leif
  * @date: 2023/12/14 11:02
@@ -32,7 +33,7 @@ public class Solution {
     public static int removeDuplicates(int[] nums){
         //因为数组去重操作，所以新数组的长度肯定是小于原数组的
         //那么可以直接引用原数组生成新数组
-        //尝试双指针，效率较高
+        //尝试双指针，效率较高 （快慢指针,）
         int n = nums.length;
         int left = 0;
 

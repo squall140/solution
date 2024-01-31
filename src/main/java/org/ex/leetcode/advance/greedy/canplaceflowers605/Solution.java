@@ -1,4 +1,4 @@
-package org.ex.leetcode.advancedalgorithm.greedy.canplaceflowers605;
+package org.ex.leetcode.advance.greedy.canplaceflowers605;
 
 /**
  * @desc: Can Place Flowers

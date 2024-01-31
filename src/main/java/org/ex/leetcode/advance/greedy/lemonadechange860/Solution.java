@@ -1,4 +1,4 @@
-package org.ex.leetcode.advancedalgorithm.greedy.lemonadechange860;
+package org.ex.leetcode.advance.greedy.lemonadechange860;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package org.ex.leetcode.advancedalgorithm.greedy.gasstation134;
+package org.ex.leetcode.advance.greedy.gasstation134;
 
 /**
  * @desc: Gas Station

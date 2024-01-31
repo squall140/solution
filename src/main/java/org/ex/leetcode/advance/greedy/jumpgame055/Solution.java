@@ -1,4 +1,4 @@
-package org.ex.leetcode.advancedalgorithm.greedy.jumpgame055;
+package org.ex.leetcode.advance.greedy.jumpgame055;
 
 import java.util.HashMap;
 

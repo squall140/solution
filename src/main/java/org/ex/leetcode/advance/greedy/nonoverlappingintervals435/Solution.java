@@ -1,4 +1,4 @@
-package org.ex.leetcode.advancedalgorithm.greedy.nonoverlappingintervals435;
+package org.ex.leetcode.advance.greedy.nonoverlappingintervals435;
 
 import java.util.ArrayList;
 import java.util.Arrays;

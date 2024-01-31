@@ -1,4 +1,4 @@
-package org.ex.leetcode.advancedalgorithm.greedy.boatstosavepeople881;
+package org.ex.leetcode.advance.greedy.boatstosavepeople881;
 
 import java.util.Arrays;
 

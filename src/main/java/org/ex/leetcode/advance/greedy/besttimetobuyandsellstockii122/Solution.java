@@ -1,4 +1,4 @@
-package org.ex.leetcode.advancedalgorithm.greedy.besttimetobuyandsellstockii122;
+package org.ex.leetcode.advance.greedy.besttimetobuyandsellstockii122;
 
 /**
  * @desc: Best Time to Buy and Sell Stock II

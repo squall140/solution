@@ -1,4 +1,4 @@
-package org.ex.leetcode.advancedalgorithm.greedy.assigncookies455;
+package org.ex.leetcode.advance.greedy.assigncookies455;
 
 import java.util.Arrays;
 

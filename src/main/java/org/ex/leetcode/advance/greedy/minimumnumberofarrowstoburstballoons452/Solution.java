@@ -1,4 +1,4 @@
-package org.ex.leetcode.advancedalgorithm.greedy.minimumnumberofarrowstoburstballoons452;
+package org.ex.leetcode.advance.greedy.minimumnumberofarrowstoburstballoons452;
 
 import java.util.Arrays;
 import java.util.Comparator;

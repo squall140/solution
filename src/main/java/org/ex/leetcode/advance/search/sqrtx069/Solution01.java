@@ -29,7 +29,7 @@ package org.ex.leetcode.advance.search.sqrtx069;
  * @author: Leif
  * @date: 2024/2/1 12:19
  */
-public class Solution {
+public class Solution01 {
     public static int mySqrt(int x) {
         // 特殊值判断
         if (x == 0) {

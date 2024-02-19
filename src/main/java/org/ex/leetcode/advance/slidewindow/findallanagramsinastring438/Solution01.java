@@ -1,6 +1,5 @@
 package org.ex.leetcode.advance.slidewindow.findallanagramsinastring438;
 
-import java.net.Inet4Address;
 import java.util.*;
 
 /**
@@ -33,7 +32,7 @@ import java.util.*;
  * @author: Leif
  * @date: 2024/2/18 20:21
  */
-public class Solution {
+public class Solution01 {
     public static List<Integer> findAnagrams(String s, String p) {
         int sLen = s.length(), pLen = p.length();
         if (sLen < pLen) {

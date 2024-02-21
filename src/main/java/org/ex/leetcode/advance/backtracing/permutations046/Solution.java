@@ -1,4 +1,4 @@
-package org.ex.leetcode.dfs.permutations046;
+package org.ex.leetcode.advance.backtracing.permutations046;
 
 import java.util.ArrayList;
 import java.util.Deque;

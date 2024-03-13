@@ -29,7 +29,7 @@ import java.util.Stack;
  * @author: Leif
  * @date: 2023/12/20 21:05
  */
-public class Solution {
+public class Solution01 {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         char[] charArray = s.toCharArray();

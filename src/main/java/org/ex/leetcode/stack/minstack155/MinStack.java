@@ -39,8 +39,8 @@ import java.util.Stack;
  * 相当于给 stack 中的降序元素做了标记，每当 pop() 这些降序元素，min_stack 会将相应的栈顶元素 pop() 出去，保证其栈顶元素始终是 stack 中的最小元素。
  * 复杂度分析：
  *
- * 时间复杂度 O(1)O(1)O(1) ：压栈，出栈，获取最小值的时间复杂度都为 O(1)O(1)O(1) 。
- * 空间复杂度 O(N)O(N)O(N) ：包含 NNN 个元素辅助栈占用线性大小的额外空间。
+ * 时间复杂度 O(1) ：压栈，出栈，获取最小值的时间复杂度都为 O(1) 。
+ * 空间复杂度 O(N) ：包含 NNN 个元素辅助栈占用线性大小的额外空间。
  *
  * 作者：Krahets
  * 链接：https://leetcode.cn/problems/min-stack/solutions/9036/min-stack-fu-zhu-stackfa-by-jin407891080/

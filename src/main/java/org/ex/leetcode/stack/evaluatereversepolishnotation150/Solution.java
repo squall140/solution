@@ -49,6 +49,7 @@ public class Solution {
             if (isNumber(token)){
                 stack.push(Integer.parseInt(token));
             }else{
+                // 这里要注意下弹栈的顺序
                 int num2 = stack.pop();
                 int num1 = stack.pop();
 

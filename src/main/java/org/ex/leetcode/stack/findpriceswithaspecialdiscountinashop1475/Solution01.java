@@ -1,5 +1,9 @@
 package org.ex.leetcode.stack.findpriceswithaspecialdiscountinashop1475;
 
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.LinkedList;
+
 /**
  * @desc: Find price in a special discount in a shop
  *
@@ -40,27 +44,44 @@ package org.ex.leetcode.stack.findpriceswithaspecialdiscountinashop1475;
  * case2：如果待入栈的元素大于等于栈顶元素，则计算入栈元素与栈顶元素之差，作为优惠后的价格，然后执行入栈操作。
  * case3：如果待入栈的元素小于栈顶元素，则执行出栈操作。
  *
- * 作者：爪哇缪斯
- * 链接：https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/solutions/1790574/by-muse-77-nh2d/
- * 来源：力扣（LeetCode）
- * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+ * 思路比较简单，我们以prices = [8,4,6,2,3]为例，看一下具体操作逻辑：
+ *
+ * 步骤1：遍历prices[4]=3元素，由于堆栈是空的，所以直接将3入栈。
+ * 步骤2：遍历prices[3]=2元素，由于小于栈顶元素3，所以将3踢出堆栈，此时堆栈为空，则将2入栈。
+ * 步骤3：遍历prices[2]=6元素，由于大于栈顶元素2，所以执行6减2得到优惠价格4，将prices[2]修改为4，并将6入栈。
+ * 步骤4：遍历prices[1]=4元素，由于小于栈顶元素6，所以将6踢出堆栈，此时再对比栈顶元素2，由于大于栈顶元素2，所以执行4减2得到优惠价格2，将prices[1]修改为2，并将4入栈。
+ * 步骤5：遍历prices[0]=8元素，由于大于栈顶元素4，所以执行8减4得到优惠价格4，将prices[0]修改为4，并将8入栈。
+ *
+ * ============================================
+ * <b>把上面的步骤反过来想，就是以下的代码实现</b>
+ * 注意单调栈里面维护的只是索引下标
+ * ============================================
  *
  * @author: Leif
  * @date: 2024/1/2 14:09
  */
-public class Solution {
-    public int[] finalPrices(int[] prices){
-        for (int i = 0; i < prices.length; i++){
-            int index = i;
-            while (index < prices.length){
-                index ++;
-                if (prices[i] >= prices[index]){
-                    prices[i] = prices[i] - prices[index];
-                    break;
-                }
+public class Solution01 {
+    public static int[] finalPrices(int[] prices){
+        Deque<Integer> stack = new LinkedList<>();
+        int n = prices.length;
+        for (int i = 0; i < n; i++){
+            int price = prices[i];
+            while (!stack.isEmpty() && prices[stack.peek()] >= price){
+                // 获取栈顶元素索引
+                int idxTop = stack.pop();
+                prices[idxTop] = prices[idxTop] - price;
             }
+            stack.push(i);
         }
         return prices;
+
+    }
+
+    public static void main(String[] args) {
+//        int[] prices = {8,4,6,2,3};
+        int[] prices = {1,2,3,4,5};
+        Arrays.stream(finalPrices(prices)).forEach(System.out::println);
+
     }
 
 }

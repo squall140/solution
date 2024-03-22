@@ -1,4 +1,4 @@
-package org.ex.leetcode.stack.findkpairswithsmallestsums373;
+package org.ex.leetcode.heap.findkpairswithsmallestsums373;
 
 import java.util.*;
 

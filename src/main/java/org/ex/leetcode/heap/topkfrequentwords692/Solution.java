@@ -1,4 +1,4 @@
-package org.ex.leetcode.stack.topkfrequentwords692;
+package org.ex.leetcode.heap.topkfrequentwords692;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package org.ex.leetcode.stack.kthlargestelementinastream703;
+package org.ex.leetcode.heap.kthlargestelementinastream703;
 
 /**
  * @desc: Kth Largest Element in a Stream

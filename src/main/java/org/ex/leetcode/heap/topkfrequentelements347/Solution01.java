@@ -1,4 +1,4 @@
-package org.ex.leetcode.stack.topkfrequentelements347;
+package org.ex.leetcode.heap.topkfrequentelements347;
 
 import java.util.*;
 

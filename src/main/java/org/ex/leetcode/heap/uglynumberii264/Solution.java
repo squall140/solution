@@ -1,4 +1,4 @@
-package org.ex.leetcode.stack.uglynumberii264;
+package org.ex.leetcode.heap.uglynumberii264;
 
 import java.util.HashSet;
 import java.util.PriorityQueue;

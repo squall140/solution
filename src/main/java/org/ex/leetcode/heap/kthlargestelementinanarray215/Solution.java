@@ -1,4 +1,4 @@
-package org.ex.leetcode.stack.kthlargestelementinanarray215;
+package org.ex.leetcode.heap.kthlargestelementinanarray215;
 
 import java.util.PriorityQueue;
 import java.util.Queue;

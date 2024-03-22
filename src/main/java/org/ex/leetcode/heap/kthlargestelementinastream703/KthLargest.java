@@ -1,7 +1,6 @@
-package org.ex.leetcode.stack.kthlargestelementinastream703;
+package org.ex.leetcode.heap.kthlargestelementinastream703;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * @desc:

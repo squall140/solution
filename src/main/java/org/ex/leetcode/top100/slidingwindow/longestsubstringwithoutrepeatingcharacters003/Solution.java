@@ -22,8 +22,8 @@ public class Solution {
             map.put(right, map.getOrDefault(right, 0) + 1);
             /**
              * 这里比较难理解
-             * 借助while循环维护一个条件，只有满足map.get(end) > 1的时候，才退出，
-             * 那么意义在于维护一个字符区间[start,end]区间内不允许有重复字符出现，
+             * 借助while循环维护一个条件，只有满足map.get(right) > 1的时候，即窗口中发现有重复字符的时候，才执行
+             * 意义在于维护一个字符区间[start,end]区间内不允许有重复字符出现，如果发现有重复的，就挪动左指针并减少当前字典中的最左侧字符字频
              * 右指针end每遇到一个重复字符，那么左指针start就从字典中删除一个老字符，使得区间内字符保持唯一
              * 同时向右移动左指针start
              * 用start和end模拟下这个字符串就明白了，abcabcbb

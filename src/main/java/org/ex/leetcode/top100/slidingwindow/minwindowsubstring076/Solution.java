@@ -22,6 +22,7 @@ public class Solution {
         if(s.length() == 0 || t.length() == 0 || s.length() < t.length()){
             return "";
         }
+        // s and t consist of uppercase and lowercase English letters.
         int[] need = new int[128];
         int[] window = new int[128];
         //窗口中已经匹配的字符个数
@@ -40,12 +41,12 @@ public class Solution {
             char ch = s.charAt(right);
             // window记录字频
             window[ch]++;
-            // 如果需要该字符，并且已有窗口内的字符个数小于需要的字符个数
-            if(need[ch] > 0 && need[ch] >= window[ch]){
+            // 如果需要该字符，并且已有窗口内window的字符个数小于等于need需要的字符个数
+            if(need[ch] > 0 && window[ch] <= need[ch] ){
                 count++;
             }
 
-            // [重点]当需要的字符全部包含在窗口数组内时，开始收缩left，移动到不满足条件为止
+            // [重点]当需要的字符全部包含在窗口window数组内时，开始收缩left，移动到不满足条件为止
             while(count == t.length()){
                 // 拿到此时的左指针字符
                 ch = s.charAt(left);

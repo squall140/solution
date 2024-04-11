@@ -59,7 +59,8 @@ public class Solution01 {
     public static void main(String[] args) {
         int[] nums = { 1,1,1,2,2,3 };
         int k = 2;
-        Arrays.stream(topKFrequent(nums, k)).forEach(System.out::println);
+        int[] topK = topKFrequent(nums, k);
+        System.out.println(Arrays.toString(topK));
     }
 
 

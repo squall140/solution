@@ -25,7 +25,7 @@ import java.util.List;
  * @author: Leif
  * @date: 2024/2/20 21:49
  */
-public class Solution {
+public class Solution01 {
     static List<List<Integer>> res = new ArrayList<>();
     static Deque<Integer> path = new LinkedList<>();
     public static List<List<Integer>> subsets(int[] nums) {

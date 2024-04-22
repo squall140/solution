@@ -32,7 +32,7 @@ import java.util.List;
  * @author: Leif
  * @date: 2024/2/21 14:38
  */
-public class Solution {
+public class Solution01 {
     static List<List<Integer>> res = new ArrayList<>();
     static Deque<Integer> path = new LinkedList<>();
     // used数组记录path里都放了哪些元素了

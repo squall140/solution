@@ -25,21 +25,21 @@ public class Solution02 {
         if (root == null) return 0;
         // 创建队列
         Deque<TreeNode> queue = new LinkedList<>();
-        // 整棵树先入队
+        // 先将树的头节点先入队
         queue.offer(root);
-        int count = 0;
+        int depth = 0;
         while(!queue.isEmpty()){
-            // 得到所有节点的总数量
+            // 得到当前队列的容量
             int size = queue.size();
-            // 按层入队
             while (size-- > 0){
+                // 取出当前节点下的左右子节点，分别入队（即当前层的节点入队）
                 TreeNode curNode = queue.pop();
                 if (curNode.left != null) queue.offer(curNode.left);
                 if (curNode.right != null) queue.offer(curNode.right);
             }
-            // 同时统计入队了多少层
-            count++;
+            // 统计入队了多少层
+            depth++;
         }
-        return count;
+        return depth;
     }
 }

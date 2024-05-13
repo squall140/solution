@@ -17,7 +17,7 @@ package org.ex.leetcode.top100.binarytree.validatebinarysearchtree098;
  * @author: Leif
  * @date: 2024/3/20 21:20
  */
-public class Solution {
+public class Solution01 {
     long pre = Long.MIN_VALUE;
     public boolean isValidBST(TreeNode root) {
         // 结束条件：如果root为null，返回true。

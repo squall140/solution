@@ -15,7 +15,7 @@ import java.util.Queue;
  * @author: Leif
  * @date: 2024/3/21 08:29
  */
-public class Solution {
+public class Solution01 {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) return res;

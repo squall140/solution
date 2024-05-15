@@ -39,7 +39,7 @@ public class Solution {
         // 如果 target < 0 那么path的剪枝路径一定有问题，同时不会再产生新的节点
         if (target < 0) return;
 
-        // 如果 target == 0, 将path路径上所有元素只喝一定等于 target
+        // 如果 target == 0, 将path路径上所有元素之和一定等于 target
         if (target == 0){
             res.add(new ArrayList<>(path));
             return;

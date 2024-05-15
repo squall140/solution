@@ -1,5 +1,6 @@
 package org.ex.leetcode.top100.stack.minstack155;
 
+import java.util.Objects;
 import java.util.Stack;
 
 /**
@@ -23,9 +24,10 @@ public class Solution {
 
     public void pop() {
         // 如果最小栈的栈顶元素与stack栈顶弹出的元素相同，那么也同样弹出最小栈，继续维护最小性
-        if(min_stack.peek() == stack.pop()) {
+        if (Objects.equals(stack.peek(), min_stack.peek())){
             min_stack.pop();
         }
+        stack.pop();
     }
 
     public int top() {

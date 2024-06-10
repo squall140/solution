@@ -79,7 +79,7 @@ public class Solution {
                     // 排除条件，去重，当 i 不变时，如果此时的 l 值和前一个数值相同，则 l 右移
                     while (l < r && nums[l] == nums[l + 1]) l++;
                     // 反之亦然
-                    while (l < r && nums[r] == nums[r - 1]) r++;
+                    while (l < r && nums[r] == nums[r - 1]) r--;
                     // 移动指针
                     l++;
                     r--;
@@ -96,9 +96,9 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-//        int[] nums ={-1,0,1,2,-1,-4};
+        int[] nums ={-1,0,1,2,-1,-4};
 //        int[] nums = {0,1,1};
-        int[] nums = {0, 0, 0};
+//        int[] nums = {0, 0, 0};
         System.out.println(threeSum(nums));
     }
 

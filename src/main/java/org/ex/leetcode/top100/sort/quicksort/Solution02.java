@@ -23,11 +23,11 @@ public class Solution02 {
         int pivot = nums[left];
 
         while(left < right){
-            // 从右往左找一个比 pivot 小的数
+            // 从右往左找一个比 pivot 大的数
             while (left < right && pivot <= nums[right]) right--;
             // 找到之后把它放到左边
             nums[left] = nums[right];
-            // 从左到右找一个比 pivot 大的数
+            // 从左到右找一个比 pivot 小的数
             while (left < right && pivot >= nums[left]) left++;
             // 找到之后把它放到右边
             nums[right] = nums[left];

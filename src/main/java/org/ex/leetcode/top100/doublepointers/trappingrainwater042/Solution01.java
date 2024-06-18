@@ -8,7 +8,7 @@ import java.util.LinkedList;
  * @author: Leif
  * @date: 2024/3/25 09:26
  */
-public class Solution {
+public class Solution01 {
     public static int trap(int[] height) {
         int n = height.length;
         Deque<Integer> stack = new LinkedList<>();

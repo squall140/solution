@@ -1,6 +1,7 @@
 package org.ex.leetcode.set.firstuniquecharacterinastring387;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @desc: Fist unique character in a string
@@ -54,9 +55,24 @@ public class Solution {
 
     }
 
+
+    public static int firstUniqueChar2(String s){
+        Map<Character, Integer> freq = new HashMap<>();
+        for(char c : s.toCharArray()){
+            freq.put(c, freq.getOrDefault(c, 0 ) + 1);
+        }
+
+        for(int i = 0; i < s.toCharArray().length; i++){
+            char ch = s.toCharArray()[i];
+            if ( 1 == freq.get(ch)) return i;
+        }
+
+        return -1;
+    }
+
     public static void main(String[] args) {
-        String s = "aabb";
-        System.out.println(firstUniqueChar(s));
+        String s = "aabc";
+        System.out.println(firstUniqueChar2(s));
     }
 
 

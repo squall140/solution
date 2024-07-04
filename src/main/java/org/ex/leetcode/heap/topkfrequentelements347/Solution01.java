@@ -36,6 +36,8 @@ public class Solution01 {
             }
         });
 
+//        Queue<Integer> pq = new PriorityQueue<>((o1, o2) -> map.get(o1) - map.get(o2));
+
         // 维护一个元素数目为 k 的最小堆
         for (Integer key : map.keySet()){
             if(pq.size() < k){

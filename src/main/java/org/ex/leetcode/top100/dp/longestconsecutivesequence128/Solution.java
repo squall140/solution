@@ -1,4 +1,4 @@
-package org.ex.leetcode.top100.hash.longestconsecutivesequence128;
+package org.ex.leetcode.top100.dp.longestconsecutivesequence128;
 
 import java.util.*;
 

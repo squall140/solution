@@ -23,12 +23,13 @@ public class Consumer {
       System.out.println("日志记录");
     });
 
-  }
+}
 
   private static int sendWelcomeEmail(Object newUser) {
     return 1;
   }
 
-  private static <U> U registerUser() {
+  private static User registerUser() {
+    return new User("100",20, "李四");
   }
 }
